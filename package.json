@@ -26,7 +26,10 @@
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0",
-    "cheerio": "^1.0.0-rc.3"
+    "@types/markdown-table": "^2.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "csv": "^5.3.2",
+    "markdown-table": "^2.0.0"
   },
   "devDependencies": {
     "@types/cheerio": "^0.22.22",
