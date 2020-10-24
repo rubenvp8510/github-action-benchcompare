@@ -4,9 +4,15 @@ inputs:
   GITHUB_TOKEN:
     description: 'Github token of the repository (automatically created by Github)'
     required: true
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  benchstat_file:
+    description: 'benchstat file with the comparision results'
+    required: true
+  delta_threshold:
+    description: 'delta threshold for warning for a possible performance regression'
+    required: true+
+  metrics:
+    description: 'metrics to observe'
+    required: true
 runs:
   using: 'node12'
   main: 'dist/index.js'
