@@ -1,4 +1,4 @@
-import {doComment} from './github'
+import {doComment, cleanComment} from './github'
 import {
   parseResults,
   compareDeltasWithThreshold,
@@ -25,6 +25,8 @@ async function run(): Promise<void> {
     const comment: string = lines.join('\n')
     info(comment)
     await doComment(comment)
+  } else {
+    await cleanComment()
   }
 }
 

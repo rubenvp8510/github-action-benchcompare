@@ -63,7 +63,7 @@ export function compareDeltasWithThreshold(
         info(`Checking for  ${result.delta} vs ${threshold}`)
         const resultDelta: number = parseFloat(result.delta.replace('%', ''))
         if (resultDelta > threshold) {
-          info(`Possible regression  ${result.delta} vs ${threshold}`)
+          info(`Possible regression  ${resultDelta} vs ${threshold}`)
           return true
         }
       }
